@@ -1,0 +1,14 @@
+extends layout.pug 
+
+block main-content
+    main 
+        h1 #{pageTitle}
+        h2 Users
+        if users.length > 0
+            ol 
+                each user in users 
+                    li #{user.userName}
+        else 
+            h3 No users found!!
+        h2 User Groups
+        h2 User Permissions

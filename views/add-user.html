@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link type="text/css" rel="stylesheet" href="/css/admin-style.css" />
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list">
+                <li class="main-header__item"><a href="/admin">Admin Home</a></li>
+                <li class="main-header__item"><a href="/admin/add-user">Add User</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="user-form" action="/admin/add-user" method="POST">
+            <div class="form-control">
+                <label for="userName">User Name:</label>
+                <input type="text" name="userName">
+            </div>
+            <button type="Submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
